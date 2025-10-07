@@ -43,9 +43,9 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  transition: color $transition-duration;
 
   &:hover {
-    transition: color $transition-duration;
     color: $blue-accent;
   }
 }

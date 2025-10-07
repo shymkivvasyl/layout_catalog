@@ -5,8 +5,8 @@
   grid-template-columns: repeat(4, $card-width);
   grid-template-rows: repeat(2, 400px);
   grid-auto-flow: dense;
-  grid-auto-columns: 200px;
-  gap: 46px 48px;
+  grid-auto-columns: $card-width;
+  gap: 48px 46px;
   padding: 50px 40px;
 
   justify-content: center;
