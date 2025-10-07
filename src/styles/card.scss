@@ -9,14 +9,7 @@
   border: $card-border-width;
   background-color: $card-background-color;
   border-radius: 5px;
-
-  &:hover {
-    transform: scale(120%);
-
-    .card__name {
-      color: #34568b;
-    }
-  }
+  transition: color $transition-duration;
 
   &__image {
     display: block;
@@ -47,13 +40,14 @@
       border-radius: 5px;
       height: 40px;
       &:hover {
+        transition: color 300ms;
         background-color: #fff;
         color: $blue-accent;
       }
     }
   }
 
-  &__name {
+  &__title {
     margin: 0;
     color: $main-accent;
     font-weight: 500;
@@ -98,7 +92,17 @@
     }
   }
 
+  &:hover {
+    transform: scale(1.2);
+    transition: transform $transition-duration;
+    transform-origin: center;
+    z-index: 10;
 
+    .card__title {
+      transition: color $transition-duration;
+      color: $hover-title;
+    }
+  }
 }
 
 /* #endregion */
